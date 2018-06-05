@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    color: $secondary-color;
+}
+
+p, blockquote, a, caption, figcaption, span {
+    font-family: $paragraph-font;
+    color: $secondary-color;
+}

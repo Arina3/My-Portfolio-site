@@ -1,0 +1,220 @@
+/* Styles for the Blog page */
+
+.container-main.posts.page {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 320px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: 991px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    @media (min-width: 1119px) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    ul.ajax-blog, ul.posts-list.page.single {
+        width: 100%;
+        max-width: 900px;
+        li {
+            border: 1px solid $active-color;
+            padding: 20px;
+            margin-bottom: 50px;
+            @media (min-width: 320px) {
+                text-align: center;
+            }
+            @media (min-width: 767px) {
+                text-align: center;
+            }
+            @media (min-width: 991px) {
+                text-align: left;
+            }
+            @media (min-width: 1119px) {
+                text-align: left;
+            }
+            header.entry-header div.entry-header-details {
+                padding: 20px;
+                border-bottom: 1px solid $active-color;
+                div.entry-meta {
+                    font-family: $paragraph-font;
+                    font-size: 18px;
+                    color: $secondary-color;
+                    @media (min-width: 320px) {
+                      font-size: 14px;
+                    }
+                    @media (min-width: 767px) {
+                      font-size: 16px;
+                    }
+                    @media (min-width: 991px) {
+                      font-size: 18px;
+                    }
+                    @media (min-width: 1119px) {
+                      font-size: 20px;
+                    }
+                }
+                h3.entry-title a {
+                    font-family: $heading-font;
+                    font-size: 24px;
+                    color: $secondary-color;
+                    transition: all 300ms ease-out 0s;
+                    @media (min-width: 320px) {
+                      font-size: 18px;
+                    }
+                    @media (min-width: 767px) {
+                      font-size: 20px;
+                    }
+                    @media (min-width: 991px) {
+                      font-size: 22px;
+                    }
+                    @media (min-width: 1119px) {
+                      font-size: 24px;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+            div.entry-content p {
+                font-family: $paragraph-font;
+                font-size: 18px;
+                color: $secondary-color;
+                padding: 20px;
+                line-height: 24px;
+                margin: 0;
+                @media (min-width: 320px) {
+                    font-size: 14px;
+                }
+                @media (min-width: 767px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 991px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 1119px) {
+                    font-size: 18px;
+                }
+            }
+            div.post-footer {
+                padding: 0 20px;
+                a {
+                    display: inline-block;
+                    font-family: $paragraph-font;
+                    font-size: 20px;
+                    color: $active-color;
+                    padding-bottom: 3px;
+                    line-height: 30px;
+
+                    &:hover {
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+        nav.post-navigation {
+            margin-top: 25px;
+            div.nav-links {
+                display: flex;
+                justify-content: space-between;
+                div.nav-previous {
+                    a, span {
+                        color: $primary-color;
+                        font-size: 20px;
+                        font-weight: 700;
+                        i {
+                            font-size: 24px;
+                        }
+
+                        &:hover {
+                            opacity: 0.8;
+                            }
+                        }
+                        span {
+                            padding-left: 20px;
+                            @media (min-width: 320px) {
+                                font-size: 14px;
+                            }
+                            @media (min-width: 767px) {
+                                font-size: 16px;
+                            }
+                            @media (min-width: 991px) {
+                                font-size: 18px;
+                            }
+                            @media (min-width: 1119px) {
+                                font-size: 20px;
+                            }
+                          }
+                        }
+                          div.nav-next {
+                          a, span {
+                              color: $primary-color;
+                              font-size: 20px;
+                              font-weight: 700;
+                              i {
+                                  font-size: 24px;
+                              }
+
+                              &:hover {
+                                  opacity: 0.8;
+                              }
+                          }
+                          span {
+                              padding-right: 20px;
+                              @media (min-width: 320px) {
+                                font-size: 14px;
+                              }
+                              @media (min-width: 767px) {
+                                font-size: 16px;
+                              }
+                              @media (min-width: 991px) {
+                                font-size: 18px;
+                              }
+                              @media (min-width: 1119px) {
+                                font-size: 20px;
+                              }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-project {
+        width: 100%;
+        max-width: 250px;
+        ul.sidebar-list {
+            background-color: $background-color;
+            padding: 20px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                li {
+                    border-bottom: 1px solid $active-color;
+                    padding: 20px 0;
+                    a {
+                        font-family: $paragraph-font;
+                        font-size: 20px;
+                        color: $secondary-color;
+                        transition: all 300ms ease-out 0s;
+                        font-weight: 700;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    span {
+                        color: #000;
+                    }
+                }
+                li:last-child {
+                  border: none;
+                }
+            }
+        }
+    }
+}
